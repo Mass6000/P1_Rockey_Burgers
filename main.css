@@ -84,8 +84,16 @@ div.nav {
     justify-content: space-around;
 }
 
-
 .logo {
+    text-transform: uppercase;
+    color: white;
+}
+
+.slogan {
+    color: white;
+}
+
+.keyImage {
     height: 125px;
     /*height: 300px;*/
     /*width: 650px;*/

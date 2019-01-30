@@ -1,0 +1,23 @@
+{
+  "name": "p1_rockey_burgers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mass6000/P1_Rockey_Burgers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mass6000/P1_Rockey_Burgers/issues"
+  },
+  "homepage": "https://github.com/Mass6000/P1_Rockey_Burgers#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
