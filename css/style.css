@@ -33,3 +33,48 @@ html {
 
 .socialbottom {
   background-color: blue; }
+
+.containermenu {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
+  background-image: url("../images/paper.png");
+  padding: 0 30px; }
+  .containermenu .topimage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto; }
+  .containermenu h2 {
+    margin-top: 0;
+    text-align: center; }
+  .containermenu .menucenter {
+    text-align: center; }
+  .containermenu .lineimage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto; }
+  .containermenu .menuextra {
+    margin: 0 160px;
+    display: flex;
+    justify-content: space-between; }
+  .containermenu h3 {
+    margin: 30px 80px 0 80px;
+    display: flex;
+    justify-content: space-between; }
+  .containermenu p {
+    margin: 0; }
+
+@media only screen and (max-width: 615px) {
+  .containermenu .menuextra {
+    margin: 0 80px; }
+  .containermenu h3 {
+    margin: 30px 40px 0 40px; } }
+
+@media only screen and (max-width: 475px) {
+  .containermenu .menuextra {
+    margin: 0 40px; }
+  .containermenu h3 {
+    margin: 30px 10px 0 10px; } }
