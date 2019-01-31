@@ -34,10 +34,28 @@ html {
 .socialbottom {
   background-color: blue; }
 
+h2 {
+  text-align: center; }
+
+.googlemap {
+  max-width: 320px;
+  margin: auto; }
+
+.containerlocations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .containerlocations .location {
+    width: 222px;
+    height: 273px;
+    border: 1px solid #d3d3d3;
+    margin: 5px 5px;
+    padding: 0 10px; }
+
 .containermenu {
   font-family: 'Indie Flower', cursive;
   font-size: 1.5em;
-  background-image: url("../images/paper.png");
+  background-image: url("../images/abstract-19616_1920.jpg");
   padding: 0 30px; }
   .containermenu .topimage img {
     display: block;
@@ -66,6 +84,11 @@ html {
     justify-content: space-between; }
   .containermenu p {
     margin: 0; }
+
+@media only screen and (max-width: 1060px) {
+  .containerlocations {
+    margin: auto;
+    max-width: 760px; } }
 
 @media only screen and (max-width: 615px) {
   .containermenu .menuextra {
