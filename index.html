@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rockey Burger</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500|Indie+Flower"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="css/style.css"
           type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500|Indie+Flower"
-          rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="navcontainer">
+        <div class="nav-left">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="nav-right">
+            <a href="./menu/menu.html"><button>Menu</button></a>
+            <a href="./utah_locations/utah_locations.html"><button>Locations</button></a>
+            <a href="./jobs/jobs.html"><button>Opportunities</button></a>
+            <a href=".faq/faq.html"><button>FAQ</button></a>
+        </div>
+    </div>
+    <div class="containermain">
+        <div class="paraback1"></div>
         <div class="middle">
             <div class="about">
                 <h3>Best Quality Burgers in town. Off the charts.</h3>
@@ -27,7 +45,7 @@
                         for our guests is a direct reflection of our promise of creating fast food
                         burgers using slow food values.
                     </p>
-                    <p>
+                    <p class="specialtext">
                         Bite into any Super burger, and taste the difference.
                         Our burgers, fries, and shakes are made with the finest,
                         freshest ingredients available.
@@ -58,10 +76,22 @@
                     <img src="images/rockeyburgers02-logo.png"></div>
                 <div class="subscription">
                     <h3>Subscribe Today</h3>
-                    <p>Don’t miss out on discounts</p>
-                    <p class="fName">Full Name: Text Field</p>
-                    <p class="email">Email Address: Text Field</p>
-                    <p>Phone Number: Text Field</p>
+                    <p class="subcenter">Don’t miss out on discounts</p>
+                    <form action="">
+                        Full Name:
+                        <input type="text" name="fullname">
+                    </form>
+                    <form action="">
+                        Email Address:
+                        <input type="email" name="email">
+                    </form>
+                    <form action="">
+                        Telephone:
+                        <input type="tel" name="tel">
+                    </form>
+                    <form action="">
+                        <input type="submit">
+                    </form>
                 </div>
             </div>
         </div>

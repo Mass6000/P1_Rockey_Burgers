@@ -1,8 +1,16 @@
 $pad: 0 20px;
-$aboutsize: 60%;
+$leftelementsize: 50%;
+$standardbackgroundcolor: #290100;
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 
 body {
   font-family: 'Cabin', sans-serif;
+  background-color: $standardbackgroundcolor;
 }
 
 
@@ -10,38 +18,117 @@ html {
   height: 100%;
 }
 
+@mixin para() {
+  min-height: 760px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// todo place the Navbar here
+.navcontainer {
+  position: sticky;
+  top: 2px;
+  background-color: rgba(41, 1, 0, .4);
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  .nav-left {
+    margin: 0 20px;
+
+    .fas {
+      color: #ffffff;
+      font-size: 1.75em;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    button {
+      font-family: 'Cabin', sans-serif;
+      font-size: 1.5em;
+      background-color: rgb(240, 133, 4);
+      color: rgb(41, 1, 0);
+      border: 1px solid rgb(194, 92, 2);
+      margin: 0 20px;
+      border-radius: 4px;
+    }
+
+  }
+}
+
+
+.paraback1 {
+  background-image: url("../images/burger-hero.jpg");
+  @include para;
+}
+
 .middle {
-  background-color: gray;
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
 
   .about {
-    background-color: red;
+    background-color: rgba(240, 133, 4, 1);
+
     padding: $pad;
-    width: $aboutsize;
+    width: $leftelementsize;
+    border: 1px solid #c25c02;
+    border-radius: 4px;
+
+    .specialtext {
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 4px;
+      text-shadow: 1px 1px #5b1800;
+      color: #d82d01;
+    }
+
+    h3 {
+      text-align: center;
+      text-shadow: 1px 1px #5b1800;
+    }
   }
 
   .right {
-    background-color: blue;
-    width: 95% - $aboutsize;
+    width: 95% - $leftelementsize;
     display: flex;
     flex-direction: column;
 
     .secondaryimage img {
       width: 100%;
+      border: 1px solid #c25c02;
+      border-radius: 4px;
+      background-color: rgba(240, 133, 4, 1);
     }
 
     .subscription {
-      background-color: green;
+      background-color: rgba(240, 133, 4, 1);
+      border: 1px solid #c25c02;
+      margin-bottom: 5px;
       padding: $pad;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      text-shadow: 1px 1px #5b1800;
     }
   }
 }
 
+
 .youtube {
-  background-color: gold;
+  margin: 5px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -51,8 +138,11 @@ html {
   background-color: blue;
 }
 
-h2 {
+h1 {
   text-align: center;
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 2px 2px #f08504;
 }
 
 .googlemap {
@@ -60,16 +150,35 @@ h2 {
   margin: auto;
 }
 
+.utah_locations {
+  background-image: url("../images/burger-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #290100;
+}
+
 .containerlocations {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   .location {
     width: 222px;
     height: 273px;
-    border: 1px solid #d3d3d3;
+    border: 1px solid #c25c02;
+    background-color: rgba(240, 133, 4, 0.7);
+    border-radius: 5px;
     margin: 5px 5px;
-    padding: 0 10px;
+    padding: 5px 10px;
+
+    h3 {
+      text-align: center;
+      text-shadow: 1px 1px #5b1800;
+    }
+
+    p {
+      text-shadow: 1px 1px #5b1800;
+    }
 
   }
 }
