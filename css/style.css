@@ -14,7 +14,6 @@ html {
   position: sticky;
   top: 2px;
   background-color: rgba(41, 1, 0, 0.4);
-  margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
@@ -25,7 +24,7 @@ html {
       font-size: 1.75em; }
   .navcontainer .nav-right {
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap; }
     .navcontainer .nav-right button {
       font-family: 'Cabin', sans-serif;
@@ -38,7 +37,7 @@ html {
 
 .paraback1 {
   background-image: url("../images/burger-hero.jpg");
-  min-height: 760px;
+  min-height: 650px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,6 +163,12 @@ h1 {
   .containerlocations {
     margin: auto;
     max-width: 760px; } }
+
+@media only screen and (max-width: 565px) {
+  .navcontainer {
+    flex-direction: column; }
+    .navcontainer .nav-right {
+      flex-direction: column; } }
 
 @media only screen and (max-width: 615px) {
   .containermenu .menuextra {

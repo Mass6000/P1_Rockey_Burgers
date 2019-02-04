@@ -19,7 +19,7 @@ html {
 }
 
 @mixin para() {
-  min-height: 760px;
+  min-height: 650px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ html {
   position: sticky;
   top: 2px;
   background-color: rgba(41, 1, 0, .4);
-  margin: 0 20px;
+  //margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -48,8 +48,10 @@ html {
 
   .nav-right {
     display: flex;
-    align-items: center;
+    //align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+
 
     button {
       font-family: 'Cabin', sans-serif;
@@ -242,6 +244,15 @@ h1 {
   .containerlocations {
     margin: auto;
     max-width: 760px;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .navcontainer{
+    flex-direction: column;
+    .nav-right {
+      flex-direction: column;
+    }
   }
 }
 
