@@ -79,6 +79,12 @@ html {
       padding: 0 20px;
       border-radius: 4px;
       text-align: center; }
+      .middle .right .subscription .socialcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .middle .right .subscription .socialcontainer img {
+          margin: 0 10px; }
     .middle .right h3 {
       text-align: center;
       text-shadow: 1px 1px #5b1800; }
