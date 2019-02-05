@@ -20,8 +20,8 @@ html {
   .navcontainer .nav-left {
     margin: 0 20px; }
     .navcontainer .nav-left .fas {
-      color: #ffffff;
-      font-size: 1.75em; }
+      color: #f08504;
+      font-size: 1.85em; }
   .navcontainer .nav-right {
     display: flex;
     justify-content: space-evenly;
@@ -164,6 +164,20 @@ h1 {
     justify-content: space-between; }
   .containermenu p {
     margin: 0; }
+
+.jobcontainer {
+  background-color: #f08504; }
+
+.jobs {
+  padding: 0 20px;
+  height: 730px; }
+
+.FAQcontainer {
+  background-color: #f08504; }
+
+.FAQ {
+  padding: 0 20px;
+  height: 650px; }
 
 @media only screen and (max-width: 1060px) {
   .containerlocations {
