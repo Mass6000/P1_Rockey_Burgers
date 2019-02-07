@@ -13,35 +13,39 @@ html {
 .navcontainer {
   position: sticky;
   top: 2px;
-  background-color: rgba(41, 1, 0, 0.4);
+  background-color: rgba(240, 133, 4, 0.7);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
   .navcontainer .nav-left {
     margin: 0 20px; }
     .navcontainer .nav-left .fas {
-      color: #f08504;
+      color: #290100;
       font-size: 1.85em; }
   .navcontainer .nav-right {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    color: #290100;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap; }
-    .navcontainer .nav-right button {
-      font-family: 'Cabin', sans-serif;
-      font-size: 1.5em;
-      background-color: #f08504;
-      color: #290100;
-      border: 1px solid #c25c02;
-      margin: 0 20px;
-      border-radius: 4px; }
+    .navcontainer .nav-right a:link, .navcontainer .nav-right a:visited, .navcontainer .nav-right a:hover {
+      padding: 0 25px;
+      text-decoration: none;
+      color: #290100; }
+    .navcontainer .nav-right a:hover {
+      background-color: #290100;
+      color: #f08504; }
 
 .paraback1 {
   background-image: url("../images/burger-hero.jpg");
-  min-height: 650px;
+  min-height: 565px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+iframe {
+  border: none; }
 
 .middle {
   width: 100%;
@@ -184,11 +188,13 @@ h1 {
     margin: auto;
     max-width: 760px; } }
 
-@media only screen and (max-width: 565px) {
+@media only screen and (max-width: 630px) {
   .navcontainer {
+    display: flex;
     flex-direction: column; }
-    .navcontainer .nav-right {
-      flex-direction: column; } }
+  .nav-right {
+    display: flex;
+    flex-direction: column; } }
 
 @media only screen and (max-width: 615px) {
   .containermenu .menuextra {
