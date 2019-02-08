@@ -34,11 +34,11 @@ html {
       color: #290100; }
     .navcontainer .nav-right a:hover {
       background-color: #290100;
-      color: #f08504; }
+      color: #F08504; }
 
 .paraback1 {
   background-image: url("../images/burger-hero.jpg");
-  min-height: 565px;
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,32 +53,32 @@ iframe {
   flex-wrap: wrap-reverse;
   justify-content: center; }
   .middle .about {
-    background-color: #f08504;
+    background-color: #F08504;
     padding: 0 20px;
     width: 50%;
-    border: 1px solid #c25c02;
+    border: 1px solid #C25C02;
     border-radius: 4px; }
     .middle .about .specialtext {
       text-align: center;
       background-color: #ffffff;
       border-radius: 4px;
-      text-shadow: 1px 1px #5b1800;
+      text-shadow: 1px 1px #5B1800;
       color: #d82d01; }
     .middle .about h3 {
       text-align: center;
-      text-shadow: 1px 1px #5b1800; }
+      text-shadow: 1px 1px #5B1800; }
   .middle .right {
     width: 45%;
     display: flex;
     flex-direction: column; }
     .middle .right .secondaryimage img {
       width: 100%;
-      border: 1px solid #c25c02;
+      border: 1px solid #C25C02;
       border-radius: 4px;
-      background-color: #f08504; }
+      background-color: #F08504; }
     .middle .right .subscription {
-      background-color: #f08504;
-      border: 1px solid #c25c02;
+      background-color: #F08504;
+      border: 1px solid #C25C02;
       margin-bottom: 5px;
       padding: 0 20px;
       border-radius: 4px;
@@ -106,7 +106,7 @@ h1 {
   text-align: center;
   font-size: 3em;
   color: #ffffff;
-  text-shadow: 2px 2px #f08504; }
+  text-shadow: 2px 2px #F08504; }
 
 .googlemap {
   max-width: 320px;
@@ -125,7 +125,7 @@ h1 {
   .containerlocations .location {
     width: 222px;
     height: 273px;
-    border: 1px solid #c25c02;
+    border: 1px solid #C25C02;
     background-color: rgba(240, 133, 4, 0.7);
     border-radius: 5px;
     margin: 5px 5px;
@@ -170,14 +170,14 @@ h1 {
     margin: 0; }
 
 .jobcontainer {
-  background-color: #f08504; }
+  background-color: #F08504; }
 
 .jobs {
   padding: 0 20px;
   height: 730px; }
 
 .FAQcontainer {
-  background-color: #f08504; }
+  background-color: #F08504; }
 
 .FAQ {
   padding: 0 20px;

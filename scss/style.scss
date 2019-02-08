@@ -1,6 +1,14 @@
 $pad: 0 20px;
 $leftelementsize: 50%;
 $standardbackgroundcolor: #290100;
+$colorBurntOrange: #F08504;
+$colorDarkOrange: #C25C02;
+$colorDarkBlood: #5B1800;
+$colorWebsiteRed: #D82D01;
+$colorNearBlack: #290100;
+
+
+// Boilerplate CSS
 
 html, body {
   padding: 0;
@@ -10,7 +18,7 @@ html, body {
 
 body {
   font-family: 'Cabin', sans-serif;
-  background-color: $standardbackgroundcolor;
+  background-color: $colorNearBlack;
 }
 
 
@@ -20,11 +28,19 @@ html {
 
 
 @mixin para() {
-  min-height: 565px;
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@mixin myBorder() {
+  border: 1px solid $colorDarkOrange;
+}
+
+@mixin myTextShad() {
+  text-shadow: 1px 1px #5b1800;
 }
 
 .navcontainer {
@@ -39,7 +55,7 @@ html {
     margin: 0 20px;
 
     .fas {
-      color: rgb(41, 1, 0);
+      color: $colorNearBlack;
       font-size: 1.85em;
     }
   }
@@ -47,18 +63,18 @@ html {
   .nav-right {
     font-family: 'Cabin', sans-serif;
     font-size: 1.5em;
-    color: rgb(41, 1, 0);
+    color: $colorNearBlack;
     display: flex;
     flex-wrap: wrap;
 
     a:link, a:visited, a:hover {
       padding: 0 25px;
       text-decoration: none;
-      color: rgb(41, 1, 0);
+      color: $colorNearBlack;
     }
     a:hover {
-      background-color: rgb(41, 1, 0);
-      color: rgb(240, 133, 4);
+      background-color: $colorNearBlack;
+      color: $colorBurntOrange;
     }
   }
 }
@@ -80,24 +96,23 @@ iframe {
   justify-content: center;
 
   .about {
-    background-color: rgba(240, 133, 4, 1);
-
+    background-color: $colorBurntOrange;
     padding: $pad;
     width: $leftelementsize;
-    border: 1px solid #c25c02;
+    border: 1px solid $colorDarkOrange;
     border-radius: 4px;
 
     .specialtext {
       text-align: center;
       background-color: #ffffff;
       border-radius: 4px;
-      text-shadow: 1px 1px #5b1800;
+      text-shadow: 1px 1px $colorDarkBlood;
       color: #d82d01;
     }
 
     h3 {
       text-align: center;
-      text-shadow: 1px 1px #5b1800;
+      text-shadow: 1px 1px $colorDarkBlood;
     }
   }
 
@@ -108,14 +123,14 @@ iframe {
 
     .secondaryimage img {
       width: 100%;
-      border: 1px solid #c25c02;
+      @include myBorder;
       border-radius: 4px;
-      background-color: rgba(240, 133, 4, 1);
+      background-color: $colorBurntOrange;
     }
 
     .subscription {
-      background-color: rgba(240, 133, 4, 1);
-      border: 1px solid #c25c02;
+      background-color: $colorBurntOrange;
+      @include myBorder;
       margin-bottom: 5px;
       padding: $pad;
       border-radius: 4px;
@@ -136,7 +151,7 @@ iframe {
 
     h3 {
       text-align: center;
-      text-shadow: 1px 1px #5b1800;
+      @include myTextShad;
     }
   }
 }
@@ -157,7 +172,7 @@ h1 {
   text-align: center;
   font-size: 3em;
   color: #ffffff;
-  text-shadow: 2px 2px #f08504;
+  text-shadow: 2px 2px $colorBurntOrange;
 }
 
 .googlemap {
@@ -169,7 +184,7 @@ h1 {
   background-image: url("../images/burger-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #290100;
+  background-color: $colorNearBlack;
 }
 
 .containerlocations {
@@ -180,7 +195,7 @@ h1 {
   .location {
     width: 222px;
     height: 273px;
-    border: 1px solid #c25c02;
+    @include myBorder;
     background-color: rgba(240, 133, 4, 0.7);
     border-radius: 5px;
     margin: 5px 5px;
@@ -188,11 +203,11 @@ h1 {
 
     h3 {
       text-align: center;
-      text-shadow: 1px 1px #5b1800;
+      @include myTextShad;
     }
 
     p {
-      text-shadow: 1px 1px #5b1800;
+      @include myTextShad;
     }
 
   }
@@ -254,7 +269,7 @@ h1 {
 }
 
 .jobcontainer {
-  background-color: rgb(240, 133, 4);
+  background-color: $colorBurntOrange;
 }
 
 .jobs {
@@ -264,7 +279,7 @@ h1 {
 }
 
 .FAQcontainer {
-  background-color: rgb(240, 133, 4);
+  background-color: $colorBurntOrange;
 }
 
 .FAQ {
