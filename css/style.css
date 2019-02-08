@@ -182,6 +182,10 @@ h1 {
 .FAQ {
   padding: 0 20px;
   height: 650px; }
+  .FAQ h2 {
+    text-align: center; }
+  .FAQ .question {
+    font-size: 1.2em; }
 
 @media only screen and (max-width: 1060px) {
   .containerlocations {

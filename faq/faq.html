@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FAQ</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
     <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -15,6 +19,16 @@
     <link rel="stylesheet"
           href="../css/style.css"
           type="text/css">
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="navcontainer">
@@ -32,33 +46,54 @@
         <div class="paraback1"></div>
         <div class="FAQ">
             <h2>Frequently Asked Questions</h2>
-            <!--todo (click and reveal feature) -->
-            <h3>Why is your Rockey Burger So Expensive?</h3>
-            <div class="reveal1">
-                <p>We focus on making meals with the best and freshest ingredients, like humanely-raised beef that is
-                    ground
-                    fresh
-                    each day, organic chicken, and Rockey Family Dairy’s organic cream for our ice cream cones, sundaes
-                    and
-                    shakes.
-                </p>
-                <p>Our commitment to freshness and quality means higher prices than you’d find at traditional fast-food
-                    burger
-                    chains. It also means food that tastes way better — because, well, it is.
-                </p>
-            </div>
-            <!-- todo (click and reveal feature) -->
-            <h3>Where does your beef come from?</h3>
-            <div class="reveal2">
-                <p>We source our humanely-raised, vegetarian-fed beef from local, family-owned ranches. We use an 85% to
-                    15%
-                    protein
-                    to fat blend, a mixture of the lean protein and the marbling found on in a cut of steak for our
-                    ground
-                    beef.
-                    The
-                    mixture is ground daily, and thus, our burgers taste so amazing.
-                </p>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                <span class="question">Why is your Rockey Burger So Expensive?</span>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>We focus on making meals with the best and freshest ingredients, like humanely-raised
+                                beef that is ground fresh each day, organic chicken, and Rockey Family Dairy’s organic
+                                cream for our ice cream cones, sundaes and shakes.
+                            </p>
+                            <p>Our commitment to freshness and quality means higher prices than you’d find at
+                                traditional fast-food burger chains. It also means food that tastes way better —
+                                because, well, it is.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="question">Where does your beef come from?</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>We focus on making meals with the best and freshest ingredients, like humanely-raised
+                                beef that is ground fresh each day, organic chicken, and Rockey Family Dairy’s organic
+                                cream for our ice cream cones, sundaes and shakes.
+                            </p>
+                            <p>Our commitment to freshness and quality means higher prices than you’d find at
+                                traditional fast-food burger chains. It also means food that tastes way better —
+                                because, well, it is.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
